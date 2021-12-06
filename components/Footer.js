@@ -1,7 +1,14 @@
+import ToolIcon from "./ToolIcon";
+import tools from "../data/tools/icons.json";
 const Footer = () => {
     return (
-        <footer className="flex justify-center bg-transparent font-semibold font-inter text-gradient2 bg-green-100 bg-opacity-70 p-2 text-center">
-            Made with &#60;3 by Helen Mathew
+        <footer className="flex justify-center items-center font-normal font-inter text-gray-200">
+            <a href="https://github.com/helen-mathew" className="mt-1">
+                <ion-icon
+                    name="logo-github"
+                    style={{fontSize: "40px"}}
+                ></ion-icon>
+            </a>
         </footer>
     );
 };

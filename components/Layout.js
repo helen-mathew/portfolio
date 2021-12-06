@@ -17,9 +17,9 @@ export default function Layout({children, home}) {
 
             <Navbar />
 
-            <main className="font-syne text-green-100 flex-1">{children}</main>
+            <main className=" flex-1">{children}</main>
 
-            {/* <hr className="border-green-100" /> */}
+            <hr />
            <Footer/>
         </div>
     );
