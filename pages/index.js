@@ -7,38 +7,52 @@ import ToolIcon from "../components/ToolIcon";
 import toolicons from "../data/tools/icons.json";
 export default function Home() {
     return (
-        <div className="flex flex-col items-start px-14 sm:px-20 md:px-28 lg:px-48">
-            <div className="flex flex-col md:flex-row text-center justify-center items-center my-16  sm:my-32 text-logo">
+        <div className="flex flex-col items-start px-6 md:px-28 lg:px-48">
+            <div className="flex flex-col md:flex-row justify-center items-center my-32 text-logo">
                 <div>
-                    <h1 className="font-inter font-bold text-2xl sm:text-4xl md:text-6xl lg:text-7xl pb-4 md:text-left">
-                        Hello World! I’m Helen :){" "}
+                    <h1 className="font-inter font-bold text-5xl md:text-6xl lg:text-7xl pb-3 md:pb-6 text-left">
+                        Hello World!{" "}
                     </h1>
-                    <p className=" font-inter text-xl sm:text-2xl md:text-4xl lg:text-5xl  md:text-left font-bold text-gray-300">
-                        I'm an aspiring web developer with interests in social
-                        change and activism.{" "}
+                    <p className=" font-inter text-3xl md:text-4xl lg:text-5xl  md:text-left font-bold text-gray-300">
+                        I'm <span className="text-gradient2">Helen,</span> and I
+                        enjoy building things.
                     </p>
+                    <p className="pt-3 font-inter text-l md:text-2xl  md:text-left font-normal text-gray-300">
+                        Fun fact! The first time I ever used HTML & CSS was in
+                        2014 to customize the many wonderful blog themes people
+                        created on the one and only,
+                        <span className="text-gradient2 font-semibold">
+                            {" "}
+                            tumblr.com.
+                        </span>
+                    </p>
+
+                    {/* <p className="pt-2 font-inter text-3xl font-bold">
+                        Coding for good causes
+                    </p> */}
                 </div>
             </div>
 
-            <div className="text-center font-inter font-medium my-32 text-l md:text-2xl text-logo md:text-left">
+            <div className="font-inter font-normal my-40 text-l md:text-2xl text-logo text-left min-w-full">
                 <h1 className="text-2xl md:text-3xl font-bold font-inter">
-                    ABOUT ME
+                    About Me
                 </h1>
+                <hr />
                 <p className="pt-3">
-                    My first "real" exposure to HTML and CSS was on Tumblr as a
-                    teenager.{" "}
+                    Third-year at Carleton, from India/UAE blah blah blah.
                 </p>
             </div>
 
-            <div className="my-32 text-logo text-center text-l md:text-left">
+            <div className="my-32 text-logo text-l text-left">
                 <h1 className=" text-2xl md:text-3xl font-bold font-inter">
-                    MY TOOL-KIT
+                    My tool-kit
                 </h1>
+                <hr />
                 <div className="font-inter font-medium  md:text-xl flex flex-wrap justify-evenly mt-4">
                     {toolicons.icons.map((prop) => (
                         <ToolIcon src={prop.src} title={prop.title} />
                     ))}
-                    <div className="flex flex-col justify-center items-center p-5 pl-0">
+                    <div className="flex flex-col justify-center items-center p-5">
                         <img
                             className="h-14"
                             src="/vscode-alt.png"
@@ -46,7 +60,7 @@ export default function Home() {
                         />
                         <p className="text-center">Visual Studio Code</p>
                     </div>
-                    <div className="flex flex-col justify-center items-center p-5 pl-0">
+                    <div className="flex flex-col justify-center items-center p-5">
                         <img
                             className="h-14"
                             src="/Logo_RGB_White.png"
