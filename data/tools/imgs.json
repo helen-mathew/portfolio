@@ -1,0 +1,10 @@
+{
+    "imgs": [
+        {
+            "type": "img",
+            "src": "/vscode-alt.png",
+            "title": "Visual Studio Code"
+        },
+        {"type": "img", "src": "/Logo_RGB_White.png"}
+    ]
+}

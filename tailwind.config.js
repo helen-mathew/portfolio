@@ -8,13 +8,18 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                gradient1: "#80D0C7",
+                gradient1: "#64B0B3",
                 gradient2: "#13547A",
+                logo: "#f3f3f3",
             },
             fontFamily: {
                 syne: "Syne",
                 inter: "Inter",
             },
+            backgroundImage: {
+                moviedb: "url('/projects/moviedb.png')",
+            },
+            backgroundPosition: ["hover", "focus"],
         },
     },
     variants: {

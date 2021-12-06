@@ -1,0 +1,15 @@
+{
+    "icons": [
+        {"type": "icon", "src": "logo-html5", "title": "HTML5"},
+        {"type": "icon", "src": "logo-css3", "title": "CSS"},
+        {"type": "icon", "src": "logo-sass", "title": "Sass"},
+        {"type": "icon", "src": "logo-javascript", "title": "Javscript"},
+        {"type": "icon", "src": "logo-react", "title": "React.js"},
+        {"type": "icon", "src": "logo-nodejs", "title": "Node.js"},
+        {"type": "icon", "src": "git-branch-outline", "title": "Git"},
+        {"type": "icon", "src": "logo-github", "title": "GitHub"},
+        {"type": "icon", "src": "logo-bitbucket", "title": "BitBucket"},
+        {"type": "icon", "src": "logo-python", "title": "Python"},
+        {"type": "icon", "src": "logo-vercel", "title": "Vercel"}
+    ]
+}
