@@ -13,7 +13,7 @@ export default function Home() {
                     <h1 className="font-inter font-bold text-5xl md:text-6xl lg:text-7xl pb-3 md:pb-6 text-left">
                         Hello World!{" "}
                     </h1>
-                    <p className=" font-inter text-3xl md:text-4xl lg:text-5xl  md:text-left font-bold text-gray-300">
+                    <p className=" font-inter text-3xl md:text-4xl   md:text-left font-bold text-gray-300">
                         I'm <span className="text-gradient2">Helen,</span> and I
                         enjoy building things.
                     </p>
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
 
             <div className="font-inter font-normal my-40 text-l md:text-2xl text-logo text-left min-w-full">
-                <h1 className="text-2xl md:text-3xl font-bold font-inter">
+                <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     About Me
                 </h1>
                 <hr />
@@ -44,7 +44,7 @@ export default function Home() {
             </div>
 
             <div className="my-32 text-logo text-l text-left">
-                <h1 className=" text-2xl md:text-3xl font-bold font-inter">
+                <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     My tool-kit
                 </h1>
                 <hr />
