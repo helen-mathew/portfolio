@@ -12,10 +12,10 @@ export default function Home() {
                 <img src="/avatar-drawn.png" className="w-36" />
             </a>
 
-            <h1 className="font-inter font-bold text-4xl text-green-100 pt-5 text-center">
+            <h1 className="font-inter font-bold text-3xl text-green-100 pt-5 text-center">
                 Hello World! I’m Helen :){" "}
             </h1>
-            <p className="p-4 font-inter font-medium">
+            <p className="p-4 font-inter font-medium text-center">
                 I'm an aspiring full-stack web developer with interests in
                 social change and activism.{" "}
             </p>
