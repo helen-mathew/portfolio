@@ -9,56 +9,49 @@ import toolicons from "../data/tools/icons.json";
 import Carousel from "../components/Carousel";
 export default function Home() {
     return (
-        <div className="flex flex-col items-start px-6 md:px-16 lg:px-36 md:mt-24">
+        <div className="flex flex-col items-start px-6 md:px-16 lg:px-32 md:mt-24">
             <div
                 id="header"
-                className="flex flex-col lg:flex-row-reverse md:justify-between md:mt-12 mb-36  text-gray-200 opacity-95 min-w-full"
+                className="flex flex-col lg:flex-row-reverse md:items-start lg:justify-between md:mt-12 mb-36  text-gray-200 opacity-95 min-w-full"
             >
                 <img
-                    className="w-80 self-center mb-12 lg:m-0"
+                    className="w-80 self-center md:self-start mb-12 lg:m-0"
                     src="/Music Raw Files/music file2-02.svg"
                     alt="Avatar"
                 />
 
-                <div className="min-h-full">
+                <div className="min-h-full mr-0">
                     <h1 className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-3 md:pb-6 text-left">
-                        Hello, World :){" "}
+                        Hello World!{" "}
                     </h1>
                     <p className=" font-inter text-3xl sm:text-4xl md:text-5xl   md:text-left font-bold opacity-80">
-                        I'm <span className="text-yellow-200">Helen,</span> I
-                        like
-                        <br />
+                        I'm{" "}
+                        <span className="text-yellow-200">Helen Mathew,</span>{" "}
+                        and I like <br />
                         <Carousel />
                     </p>
-                    {/* <p className="pt-3 font-inter text-l md:text-2xl  md:text-left font-medium ">
-                        Here's a fun fact! The first time I ever used HTML & CSS
-                        was in 2014 to customize the many wonderful blog themes
-                        people created on the one and only,
-                        <span className="font-bold"> tumblr.com.</span>
-                    </p> */}
-
-                    {/* <p className="pt-2 font-inter text-3xl font-bold">
-                        Coding for good causes
-                    </p> */}
                 </div>
             </div>
 
             <div
                 id="about"
-                className="font-inter font-normal my-56 text-l md:text-2xl text-gray-200 opacity-85 text-left min-w-full"
+                className="font-inter font-light my-56 text-l md:text-xl text-gray-200 opacity-85 text-left min-w-full"
             >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     About Me
                 </h1>
                 <hr />
-                <p className="pt-3">
-                    Third-year at Carleton, from India/UAE blah blah blah.
+                <p className="pt-3 font-inter">
+                    Here's a fun fact! The first time I ever used HTML & CSS was
+                    in 2014 to customize the many wonderful blog themes people
+                    created on the one and only,
+                    <span className="font-bold"> tumblr.com.</span>
                 </p>
             </div>
 
             <div
                 id="projects"
-                className="font-inter font-normal my-40 text-l md:text-2xl text-gray-200 opacity-85 text-left min-w-full"
+                className="font-inter font-light my-40 text-l md:text-xl text-gray-200 opacity-85 text-left min-w-full"
             >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     Projects
@@ -76,8 +69,12 @@ export default function Home() {
                 </h1>
                 <hr />
                 <div className="font-inter font-medium  md:text-xl flex flex-wrap justify-evenly mt-4">
-                    {toolicons.icons.map((prop) => (
-                        <ToolIcon src={prop.src} title={prop.title} />
+                    {toolicons.icons.map((icon) => (
+                        <ToolIcon
+                            key={icon.title}
+                            src={icon.src}
+                            title={icon.title}
+                        />
                     ))}
                     <div className="flex flex-col justify-center items-center p-5">
                         <img
