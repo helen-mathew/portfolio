@@ -21,25 +21,22 @@ export default function Home() {
                 /> */}
 
                 <div className="mr-0 self-center">
-                    <p className="text-xl md:text-2xl font-semibold opacity-90 pb-3">
+                    <p className="md:text-lg lg:text-2xl font-semibold opacity-90 pb-1">
                         Hello World! I am
                     </p>
-                    <p className="font-inter font-bold text-3xl sm:text-5xl md:text-7xl text-yellow-200 opacity-80 pb-5 text-left">
+                    <p className="font-inter font-bold text-3xl sm:text-5xl md:text-7xl text-yellow-200 opacity-75 pb-1 text-left">
                         Helen Mathew.{" "}
                     </p>
-                    <p className=" font-inter text-2xl md:text-5xl md:text-left font-bold opacity-80 pb-5">
+                    <p className=" font-inter text-xl md:text-5xl md:text-left font-bold opacity-75 pb-1">
                         {/* I'm <span className="text-yellow-200">Helen,</span> an
                         aspiring full-stack web developer
                         <br /> */}
                         I like <Carousel />
                     </p>
-                    <p className="text-xl md:text-3xl font-normal opacity-80 ">
+                    <p className="md:text-2xl font-normal opacity-80">
                         A web development class I took at university really
-                        stuck with me, and I have been scouring the internet for
-                        resources to learn more. Currently, I'm learning
-                        Tailwind CSS and React.js. This website uses both, so
-                        thanks to Tailwind, I never needed to create an actual
-                        CSS file! Isn't that wild?
+                        stuck with me.Since then, I have been scouring the
+                        internet for resources to learn more.
                         {/* <br />
                         I also enjoy <Carousel /> */}
                     </p>
@@ -51,7 +48,7 @@ export default function Home() {
 
             <div
                 id="about"
-                className="font-inter font-light my-56 text-l md:text-xl text-gray-200 opacity-85 text-left min-w-full"
+                className="font-inter font-light my-56 md:text-xl text-gray-200 opacity-85 text-left min-w-full"
             >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     About Me
@@ -68,7 +65,7 @@ export default function Home() {
 
             <div
                 id="projects"
-                className="font-inter font-light my-40 text-l md:text-xl text-gray-200 opacity-85 text-left min-w-full"
+                className="font-inter font-light my-40 md:text-xl text-gray-200 opacity-85 text-left min-w-full"
             >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     Projects
@@ -79,7 +76,7 @@ export default function Home() {
 
             <div
                 id="skills"
-                className="my-24 text-gray-200 opacity-85 text-l text-left"
+                className="my-24 text-gray-200 opacity-85 text-left"
             >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     My tool kit
