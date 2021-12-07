@@ -1,31 +1,40 @@
 import Head from "next/head";
 import Image from "next/image";
 import Card from "../components/Card";
+import React from "react";
 //import avatar from "/avatar-plain.png";
 import icons from "../data/tools/icons.json";
 import ToolIcon from "../components/ToolIcon";
 import toolicons from "../data/tools/icons.json";
+import Carousel from "../components/Carousel";
 export default function Home() {
     return (
-        <div className="flex flex-col items-start px-6 md:px-28 lg:px-48">
-            <div className="flex flex-col md:flex-row justify-center items-center my-32 text-gray-200 opacity-95">
-                <div>
+        <div className="flex flex-col items-start px-6 md:px-16 lg:px-40 md:mt-24">
+            <div
+                id="header"
+                className="flex flex-col lg:flex-row-reverse md:justify-between md:mt-12 mb-36  text-gray-200 opacity-95 min-w-full"
+            >
+                <img
+                    className="w-80 self-center mb-12 lg:m-0"
+                    src="/Music Raw Files/music file2-02.svg"
+                    alt="Avatar"
+                />
+                <div className="min-h-full">
                     <h1 className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-3 md:pb-6 text-left">
-                        Hello World :D{" "}
+                        Hello, World :){" "}
                     </h1>
-                    <p className=" font-inter text-2xl sm:text-3xl md:text-4xl   md:text-left font-bold opacity-85">
-                        I'm{" "}
-                        <span className="text-yellow-200 opacity-80">
-                            Helen,
-                        </span>{" "}
-                        and I enjoy building things.
+                    <p className=" font-inter text-3xl sm:text-4xl md:text-5xl   md:text-left font-bold opacity-80">
+                        I'm <span className="text-yellow-200">Helen,</span> I
+                        like
+                        <br />
+                        <Carousel />
                     </p>
-                    <p className="pt-3 font-inter text-l md:text-2xl  md:text-left font-medium ">
+                    {/* <p className="pt-3 font-inter text-l md:text-2xl  md:text-left font-medium ">
                         Here's a fun fact! The first time I ever used HTML & CSS
                         was in 2014 to customize the many wonderful blog themes
                         people created on the one and only,
                         <span className="font-bold"> tumblr.com.</span>
-                    </p>
+                    </p> */}
 
                     {/* <p className="pt-2 font-inter text-3xl font-bold">
                         Coding for good causes
@@ -33,7 +42,10 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="font-inter font-normal my-40 text-l md:text-2xl text-gray-200 opacity-85 text-left min-w-full">
+            <div
+                id="about"
+                className="font-inter font-normal my-56 text-l md:text-2xl text-gray-200 opacity-85 text-left min-w-full"
+            >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     About Me
                 </h1>
@@ -43,7 +55,10 @@ export default function Home() {
                 </p>
             </div>
 
-            <div className="font-inter font-normal my-40 text-l md:text-2xl text-gray-200 opacity-85 text-left min-w-full">
+            <div
+                id="projects"
+                className="font-inter font-normal my-40 text-l md:text-2xl text-gray-200 opacity-85 text-left min-w-full"
+            >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     Projects
                 </h1>
@@ -51,7 +66,10 @@ export default function Home() {
                 <p className="pt-3">fun stuff.</p>
             </div>
 
-            <div className="my-24 text-gray-200 opacity-85 text-l text-left">
+            <div
+                id="skills"
+                className="my-24 text-gray-200 opacity-85 text-l text-left"
+            >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     My tool kit
                 </h1>

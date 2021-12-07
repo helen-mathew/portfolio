@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Navbar = () => {
     return (
-        <nav className="flex justify-center lg:justify-end  font-medium font-inter text-yellow-200 opacity-80 h-20">
+        <nav className="flex justify-center lg:justify-end  font-semibold font-inter text-yellow-200 opacity-75 h-20">
             <div className="flex justify-evenly items-center mx-48">
                 <Link href="/about">
                     <a className="m-3 hover:underline " target="_blank">
