@@ -24,7 +24,7 @@ export default function Home() {
                     <p className="md:text-lg lg:text-2xl font-semibold opacity-90 pb-1">
                         Hello World! I am
                     </p>
-                    <p className="font-inter font-bold text-3xl sm:text-5xl md:text-7xl text-yellow-200 opacity-75 pb-1 text-left">
+                    <p className="font-inter font-bold text-4xl sm:text-7xl text-yellow-200 opacity-75 pb-1 text-left">
                         Helen Mathew.{" "}
                     </p>
                     <p className=" font-inter text-xl md:text-5xl md:text-left font-bold opacity-75 pb-1">
