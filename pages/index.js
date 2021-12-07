@@ -15,7 +15,7 @@ export default function Home() {
                 className="flex flex-col lg:flex-row-reverse md:items-start lg:justify-between md:mt-12 mb-36  text-gray-200 opacity-95 min-w-full"
             >
                 <img
-                    className="w-80 self-center md:self-start mb-12 lg:m-0"
+                    className="md:w-80 self-center md:self-start mb-12 lg:m-0 w-64"
                     src="/Music Raw Files/music file2-02.svg"
                     alt="Avatar"
                 />
@@ -24,11 +24,13 @@ export default function Home() {
                     <h1 className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-3 md:pb-6 text-left">
                         Hello World!{" "}
                     </h1>
-                    <p className=" font-inter text-3xl sm:text-4xl md:text-5xl   md:text-left font-bold opacity-80">
+                    <p className=" font-inter text-2xl md:text-4xl md:text-left font-bold opacity-80 break-word">
                         I'm{" "}
-                        <span className="text-yellow-200">Helen Mathew.</span> I
-                        like <br />
-                        <Carousel />
+                        <span className="text-yellow-200">Helen Mathew,</span> I
+                        like building web apps.
+                    </p>
+                    <p className="text-xl md:text-3xl font-bold opacity-80">
+                        I also enjoy <Carousel />
                     </p>
                 </div>
             </div>
@@ -77,15 +79,11 @@ export default function Home() {
                             title={icon.title}
                         />
                     ))}
-                    {/* <div className="flex flex-col justify-center items-center p-5">
-                        <img
-                            className="h-14"
-                            src="/vscode-alt.png"
-                            alt="Visual Studio Code Icon"
-                        />
-                        <p className="text-center">Visual Studio Code</p>
-                    </div>
                     <div className="flex flex-col justify-center items-center p-5">
+                        <img className="h-14" src="/pug.svg" alt="Pug.js" />
+                        <p className="text-center">Pug.js</p>
+                    </div>
+                    {/* <div className="flex flex-col justify-center items-center p-5">
                         <img
                             className="h-14"
                             src="/Logo_RGB_White.png"

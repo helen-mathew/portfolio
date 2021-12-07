@@ -2,13 +2,13 @@ import {useState, useEffect, useRef} from "react";
 
 const Carousel = () => {
     let arr = [
-        "building web apps.",
         "reading.",
         "crocheting.",
         "knitting.",
         "music.",
         "biking.",
-        "coding for non-profits.",
+        "volunteering.",
+        "baking.",
         "attending hackathons.",
     ];
     const [index, setIndex] = useState(0);
@@ -21,14 +21,19 @@ const Carousel = () => {
                 setSub(sub + 1);
                 setWord(word + arr[index].charAt(sub));
             }
-        }, 55);
+        }, 60);
         if (sub === arr[index].length - 1) {
             const timeout = setTimeout(() => {
-                setIndex((index + 1) % arr.length);
+                if (index === arr.length - 1) {
+                    setIndex(0);
+                } else {
+                    setIndex(index + 1);
+                }
+                //setIndex((index + 1) % arr.length);
                 setWord("");
                 setSub(0);
                 clearTimeout(timeout);
-            }, 950);
+            }, 1000);
         }
 
         return () => {
