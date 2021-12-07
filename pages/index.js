@@ -35,7 +35,7 @@ export default function Home() {
                     </p>
                     <p className="md:text-2xl font-normal opacity-80">
                         A web development class I took at university really
-                        stuck with me.Since then, I have been scouring the
+                        stuck with me. Since then, I have been scouring the
                         internet for resources to learn more.
                         {/* <br />
                         I also enjoy <Carousel /> */}
