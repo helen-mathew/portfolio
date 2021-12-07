@@ -8,11 +8,10 @@ const Carousel = () => {
         "knitting.",
         "listening to music.",
         "biking.",
-        "coding for a good cause.",
+        "coding for non-profits.",
         "attending hackathons.",
     ];
     const [index, setIndex] = useState(0);
-    const indexRef = useRef(index);
 
     const [sub, setSub] = useState(0);
     const [word, setWord] = useState("");
@@ -22,14 +21,14 @@ const Carousel = () => {
                 setSub(sub + 1);
                 setWord(word + arr[index].charAt(sub));
             }
-        }, 60);
+        }, 55);
         if (sub === arr[index].length - 1) {
             const timeout = setTimeout(() => {
                 setIndex((index + 1) % arr.length);
                 setWord("");
                 setSub(0);
                 clearTimeout(timeout);
-            }, 900);
+            }, 950);
         }
 
         return () => {

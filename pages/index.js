@@ -9,7 +9,7 @@ import toolicons from "../data/tools/icons.json";
 import Carousel from "../components/Carousel";
 export default function Home() {
     return (
-        <div className="flex flex-col items-start px-6 md:px-16 lg:px-40 md:mt-24">
+        <div className="flex flex-col items-start px-6 md:px-16 lg:px-36 md:mt-24">
             <div
                 id="header"
                 className="flex flex-col lg:flex-row-reverse md:justify-between md:mt-12 mb-36  text-gray-200 opacity-95 min-w-full"
@@ -19,6 +19,7 @@ export default function Home() {
                     src="/Music Raw Files/music file2-02.svg"
                     alt="Avatar"
                 />
+
                 <div className="min-h-full">
                     <h1 className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-3 md:pb-6 text-left">
                         Hello, World :){" "}
