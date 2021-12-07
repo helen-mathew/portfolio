@@ -2,6 +2,7 @@ import {useState, useEffect, useRef} from "react";
 
 const Carousel = () => {
     let arr = [
+        "building web apps",
         "reading.",
         "crocheting.",
         "knitting.",

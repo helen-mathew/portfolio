@@ -9,29 +9,43 @@ import toolicons from "../data/tools/icons.json";
 import Carousel from "../components/Carousel";
 export default function Home() {
     return (
-        <div className="flex flex-col items-start px-6 md:px-16 lg:px-32 md:mt-24">
+        <div className="items-start px-6 md:px-16 lg:px-28 min-w-screen">
             <div
                 id="header"
-                className="flex flex-col lg:flex-row-reverse md:items-start lg:justify-between md:mt-12 mb-36  text-gray-200 opacity-95 min-w-full"
+                className="flex flex-row md:text-left md:items-start lg:justify-between text-gray-200 opacity-95 min-h-screen"
             >
-                <img
+                {/* <img
                     className="md:w-80 self-center md:self-start mb-12 lg:m-0 w-64"
-                    src="/Music Raw Files/music file2-02.svg"
+                    src="/Music Raw Files/music file2-05.svg"
                     alt="Avatar"
-                />
+                /> */}
 
-                <div className="min-h-full mr-0">
-                    <h1 className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-3 md:pb-6 text-left">
-                        Hello World!{" "}
-                    </h1>
-                    <p className=" font-inter text-2xl md:text-4xl md:text-left font-bold opacity-80 break-word">
-                        I'm{" "}
-                        <span className="text-yellow-200">Helen Mathew,</span> I
-                        like building web apps.
+                <div className="mr-0 self-center">
+                    <p className="text-xl md:text-2xl font-semibold opacity-90 pb-3">
+                        Hello World! I am
                     </p>
-                    <p className="text-xl md:text-3xl font-bold opacity-80">
-                        I also enjoy <Carousel />
+                    <p className="font-inter font-bold text-3xl sm:text-5xl md:text-7xl text-yellow-200 opacity-80 pb-5 text-left">
+                        Helen Mathew.{" "}
                     </p>
+                    <p className=" font-inter text-2xl md:text-5xl md:text-left font-bold opacity-80 pb-5">
+                        {/* I'm <span className="text-yellow-200">Helen,</span> an
+                        aspiring full-stack web developer
+                        <br /> */}
+                        I like <Carousel />
+                    </p>
+                    <p className="text-xl md:text-3xl font-normal opacity-80 ">
+                        A web development class I took at university really
+                        stuck with me, and I have been scouring the internet for
+                        resources to learn more. Currently, I'm learning
+                        Tailwind CSS and React.js. This website uses both, so
+                        thanks to Tailwind, I never needed to create an actual
+                        CSS file! Isn't that wild?
+                        {/* <br />
+                        I also enjoy <Carousel /> */}
+                    </p>
+                    {/* <p className="text-l md:text-3xl font-bold opacity-80">
+                        I enjoy <Carousel />
+                    </p> */}
                 </div>
             </div>
 
