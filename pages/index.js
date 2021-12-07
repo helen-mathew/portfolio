@@ -27,7 +27,8 @@ export default function Home() {
                     <p className="font-inter font-bold text-4xl sm:text-7xl text-yellow-200 opacity-75 pb-1 text-left">
                         Helen Mathew.{" "}
                     </p>
-                    <p className=" font-inter text-xl md:text-5xl md:text-left font-bold opacity-75 pb-1">
+                    {/* add custom media query for tiny phones and change text to xl */}
+                    <p className=" font-inter text-2xl md:text-5xl md:text-left font-bold opacity-75 pb-1">
                         {/* I'm <span className="text-yellow-200">Helen,</span> an
                         aspiring full-stack web developer
                         <br /> */}
