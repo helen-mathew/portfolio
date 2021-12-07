@@ -10,6 +10,8 @@
         {"type": "icon", "src": "logo-github", "title": "GitHub"},
         {"type": "icon", "src": "logo-bitbucket", "title": "BitBucket"},
         {"type": "icon", "src": "logo-python", "title": "Python"},
-        {"type": "icon", "src": "logo-vercel", "title": "Vercel"}
+        {"type": "icon", "src": "logo-vercel", "title": "Vercel"},
+        {"type": "icon", "src": "logo-tux", "title": "Linux"},
+        {"type": "icon", "src": "logo-npm", "title": "NPM"}
     ]
 }

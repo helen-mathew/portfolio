@@ -2,7 +2,7 @@ import tools from "../data/tools/icons.json";
 
 const ToolIcon = (props) => {
     return (
-        <div className="flex flex-col justify-center items-center p-5">
+        <div className="flex flex-col justify-center items-center p-6">
             <ion-icon name={props.src} style={{fontSize: "60px"}}>
                 {" "}
             </ion-icon>

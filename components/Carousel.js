@@ -6,7 +6,7 @@ const Carousel = () => {
         "reading.",
         "crocheting.",
         "knitting.",
-        "listening to music.",
+        "music.",
         "biking.",
         "coding for non-profits.",
         "attending hackathons.",

@@ -26,8 +26,8 @@ export default function Home() {
                     </h1>
                     <p className=" font-inter text-3xl sm:text-4xl md:text-5xl   md:text-left font-bold opacity-80">
                         I'm{" "}
-                        <span className="text-yellow-200">Helen Mathew,</span>{" "}
-                        and I like <br />
+                        <span className="text-yellow-200">Helen Mathew.</span> I
+                        like <br />
                         <Carousel />
                     </p>
                 </div>
@@ -42,10 +42,11 @@ export default function Home() {
                 </h1>
                 <hr />
                 <p className="pt-3 font-inter">
-                    Here's a fun fact! The first time I ever used HTML & CSS was
+                    I'm sooooo cool
+                    {/* Here's a fun fact! The first time I ever used HTML & CSS was
                     in 2014 to customize the many wonderful blog themes people
                     created on the one and only,
-                    <span className="font-bold"> tumblr.com.</span>
+                    <span className="font-bold"> tumblr.com.</span> */}
                 </p>
             </div>
 
@@ -57,7 +58,7 @@ export default function Home() {
                     Projects
                 </h1>
                 <hr />
-                <p className="pt-3">fun stuff.</p>
+                <p className="pt-3">So much fun stuff.</p>
             </div>
 
             <div
@@ -76,7 +77,7 @@ export default function Home() {
                             title={icon.title}
                         />
                     ))}
-                    <div className="flex flex-col justify-center items-center p-5">
+                    {/* <div className="flex flex-col justify-center items-center p-5">
                         <img
                             className="h-14"
                             src="/vscode-alt.png"
@@ -90,7 +91,7 @@ export default function Home() {
                             src="/Logo_RGB_White.png"
                             alt="MongoDB icon"
                         />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
