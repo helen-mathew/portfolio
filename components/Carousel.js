@@ -15,38 +15,35 @@ const Carousel = () => {
     const [index, setIndex] = useState(0);
 
     //const [sub, setSub] = useState(0);
+    const [rev, setRev] = useState(false);
     const [word, setWord] = useState("");
     useEffect(() => {
-        //console.log(index);
-        if (word.length === arr[index].length) {
-            const timeout = setTimeout(() => {
-                //console.log("wee");
-                if (index === arr.length - 1) {
-                    setIndex(0);
+        const timeout = setTimeout(() => {
+            if (!rev) {
+                // if(word.length === arr[index].length-2)
+                if (word.length === arr[index].length) {
+                    const timeout2 = setTimeout(() => {
+                        setRev(true);
+                    }, 800);
                 } else {
-                    setIndex(index + 1);
+                    setWord(word + arr[index].charAt(word.length));
                 }
+            } else {
+                if (word.length > 0) {
+                    setWord(word.slice(0, -1));
+                } else {
+                    setIndex((index + 1) % arr.length);
+                    setWord("");
+                    setRev(false);
+                }
+            }
+        }, 60);
 
-                setWord("");
-
-                clearTimeout(timeout);
-            }, 1000);
-        } else {
-            const interval = setTimeout(() => {
-                //setSub(sub + 1);
-                setWord(word + arr[index].charAt(word.length));
-                //console.log("word: " + word);
-                //console.log("char: " + arr[index].charAt(word.length));
-                //console.log("changed sub: " + sub);
-                // console.log("changed word: " + word);
-                clearInterval(interval);
-            }, 70);
-        }
         return () => {
-            clearInterval(interval);
-            //clearTimeout(timeout);
+            // clearTimeout(timeout2);
+            clearTimeout(timeout);
         };
-    });
+    }, [word, rev]);
     return <span className="text-pink-300">{word}</span>;
 };
 

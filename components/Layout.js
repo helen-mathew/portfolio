@@ -20,8 +20,10 @@ export default function Layout({children, home}) {
                 <title>Helen Mathew</title>
             </Head>
 
+            {/* <StickyNav length="0">
+                
+            </StickyNav> */}
             <Navbar />
-
             <main className=" flex-1">{children}</main>
 
             <hr />
