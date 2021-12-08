@@ -31,7 +31,7 @@ export default function Home() {
                         Helen Mathew.{" "}
                     </p>
                     {/* add custom media query for tiny phones and change text to xl */}
-                    <p className=" font-inter text-2xl md:text-5xl md:text-left font-bold opacity-75 pb-1 after:content-['|'] after:animate-blink">
+                    <p className=" font-inter text-2xl md:text-5xl md:text-left font-bold opacity-75 pb-1 after:content-['|'] after:animate-blink after:font-medium">
                         {/* I'm <span className="text-yellow-200">Helen,</span> an
                         aspiring full-stack web developer
                         <br /> */}

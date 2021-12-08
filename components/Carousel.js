@@ -10,7 +10,7 @@ const Carousel = () => {
         "biking.",
         "volunteering.",
         "baking.",
-        "attending hackathons.",
+        "hackathons.",
     ];
     const [index, setIndex] = useState(0);
 
