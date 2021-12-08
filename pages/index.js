@@ -7,6 +7,9 @@ import icons from "../data/tools/icons.json";
 import ToolIcon from "../components/ToolIcon";
 import toolicons from "../data/tools/icons.json";
 import Carousel from "../components/Carousel";
+import Typewriter from "typewriter-effect";
+import Typical from "react-typical";
+
 export default function Home() {
     return (
         <div className="items-start px-6 md:px-16 lg:px-28 min-w-screen">
@@ -28,13 +31,49 @@ export default function Home() {
                         Helen Mathew.{" "}
                     </p>
                     {/* add custom media query for tiny phones and change text to xl */}
-                    <p className=" font-inter text-2xl md:text-5xl md:text-left font-bold opacity-75 pb-1">
+                    <p className=" font-inter text-2xl md:text-5xl md:text-left font-bold opacity-75 pb-1 after:content-['|'] after:animate-blink">
                         {/* I'm <span className="text-yellow-200">Helen,</span> an
                         aspiring full-stack web developer
                         <br /> */}
-                        I like <Carousel />
+                        I like{" "}
+                        {/* <Typewriter
+                            className="inline"
+                            options={{
+                                strings: ["Hello", "World"],
+                                autoStart: true,
+                                loop: true,
+                                skipAddStyles: true,
+                                wrapperClassName:
+                                    "text-pink-300 Typewriter__wrapper inline",
+                            }}
+                        /> */}
+                        {/* <Typical
+                            steps={[
+                                "building web apps.",
+                                900,
+                                "reading.",
+                                900,
+                                "crocheting.",
+                                900,
+                                "knitting.",
+                                900,
+                                "music.",
+                                900,
+                                "biking.",
+                                900,
+                                "volunteering.",
+                                900,
+                                "baking.",
+                                900,
+                                "attending hackathons.",
+                                900,
+                            ]}
+                            loop={Infinity}
+                            wrapper="span"
+                        /> */}
+                        <Carousel />
                     </p>
-                    <p className="md:text-2xl font-normal opacity-80">
+                    <p className="md:text-2xl font-normal opacity-90">
                         A web development class I took at university really
                         stuck with me. Since then, I have been scouring the
                         internet for resources to learn more.
@@ -49,14 +88,14 @@ export default function Home() {
 
             <div
                 id="about"
-                className="font-inter font-light my-56 md:text-xl text-gray-200 opacity-85 text-left min-w-full"
+                className="font-inter font-light md:text-xl text-gray-200 opacity-90 text-left min-w-full"
             >
-                <h1 className="text-3xl md:text-4xl  font-bold font-inter">
+                <h1 className="text-3xl md:text-4xl font-bold font-inter">
                     About Me
                 </h1>
                 <hr />
                 <p className="pt-3 font-inter">
-                    I'm sooooo cool
+                    Coming soon!
                     {/* Here's a fun fact! The first time I ever used HTML & CSS was
                     in 2014 to customize the many wonderful blog themes people
                     created on the one and only,
@@ -66,18 +105,18 @@ export default function Home() {
 
             <div
                 id="projects"
-                className="font-inter font-light my-40 md:text-xl text-gray-200 opacity-85 text-left min-w-full"
+                className="font-inter my-24 font-light md:text-xl text-gray-200 opacity-90 text-left min-w-full"
             >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     Projects
                 </h1>
                 <hr />
-                <p className="pt-3">So much fun stuff.</p>
+                <p className="pt-3">Coming soon!</p>
             </div>
 
             <div
                 id="skills"
-                className="my-24 text-gray-200 opacity-85 text-left"
+                className="my-24 text-gray-200 opacity-90 text-left"
             >
                 <h1 className="text-3xl md:text-4xl  font-bold font-inter">
                     My tool kit

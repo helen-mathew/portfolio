@@ -20,6 +20,12 @@ module.exports = {
                 moviedb: "url('/projects/moviedb.png')",
             },
             backgroundPosition: ["hover", "focus"],
+            animation: {
+                blink: "blink 1s infinite step-start",
+            },
+            keyframes: {
+                blink: {"50%": {opacity: "0"}},
+            },
         },
     },
     variants: {
