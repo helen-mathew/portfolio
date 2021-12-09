@@ -1,4 +1,4 @@
-import {useState, useEffect, useRef} from "react";
+import {useState, useEffect} from "react";
 
 const Carousel = () => {
     let arr = [
@@ -18,20 +18,23 @@ const Carousel = () => {
     const [rev, setRev] = useState(false);
     const [word, setWord] = useState("");
     useEffect(() => {
+        //logic to type forwards or backwards after typingDelay
         const timeout = setTimeout(() => {
             if (!rev) {
-                // if(word.length === arr[index].length-2)
+                // if the word if fully typed, pause and set reverse to true
                 if (word.length === arr[index].length) {
                     const timeout2 = setTimeout(() => {
                         setRev(true);
                     }, 800);
                 } else {
+                    //add character (type forwards)
                     setWord(word + arr[index].charAt(word.length));
                 }
             } else {
                 if (word.length > 0) {
                     setWord(word.slice(0, -1));
                 } else {
+                    //moves to next word in array and restart
                     setIndex((index + 1) % arr.length);
                     setWord("");
                     setRev(false);
@@ -43,8 +46,12 @@ const Carousel = () => {
             // clearTimeout(timeout2);
             clearTimeout(timeout);
         };
-    }, [word, rev]);
-    return <span className="text-pink-300">{word}</span>;
+    });
+    return (
+        <span className="text-pink-300 after:content-['|'] after:animate-blink after:font-medium after:text-gray-200">
+            {word}
+        </span>
+    );
 };
 
 export default Carousel;

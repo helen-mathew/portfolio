@@ -31,47 +31,8 @@ export default function Home() {
                         Helen Mathew.{" "}
                     </p>
                     {/* add custom media query for tiny phones and change text to xl */}
-                    <p className=" font-inter text-2xl md:text-5xl md:text-left font-bold opacity-75 pb-1 after:content-['|'] after:animate-blink after:font-medium">
-                        {/* I'm <span className="text-yellow-200">Helen,</span> an
-                        aspiring full-stack web developer
-                        <br /> */}
-                        I like{" "}
-                        {/* <Typewriter
-                            className="inline"
-                            options={{
-                                strings: ["Hello", "World"],
-                                autoStart: true,
-                                loop: true,
-                                skipAddStyles: true,
-                                wrapperClassName:
-                                    "text-pink-300 Typewriter__wrapper inline",
-                            }}
-                        /> */}
-                        {/* <Typical
-                            steps={[
-                                "building web apps.",
-                                900,
-                                "reading.",
-                                900,
-                                "crocheting.",
-                                900,
-                                "knitting.",
-                                900,
-                                "music.",
-                                900,
-                                "biking.",
-                                900,
-                                "volunteering.",
-                                900,
-                                "baking.",
-                                900,
-                                "attending hackathons.",
-                                900,
-                            ]}
-                            loop={Infinity}
-                            wrapper="span"
-                        /> */}
-                        <Carousel />
+                    <p className=" font-inter text-2xl md:text-5xl md:text-left font-bold opacity-75 pb-1 ">
+                        I like <Carousel />
                     </p>
                     <p className="md:text-2xl font-normal opacity-90">
                         A web development class I took at university really
