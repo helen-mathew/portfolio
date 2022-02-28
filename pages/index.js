@@ -35,9 +35,9 @@ export default function Home() {
                         I like <Carousel />
                     </p>
                     <p className="md:text-2xl font-normal opacity-90">
-                        A web development class I took at university really
-                        stuck with me. Since then, I have been scouring the
-                        internet for resources to learn more.
+                        I am a third-year student at Carleton University seeking
+                        a Co-op position for the summer. I study Cognitive
+                        Science with a concentration in Computing.
                         {/* <br />
                         I also enjoy <Carousel /> */}
                     </p>
@@ -56,11 +56,39 @@ export default function Home() {
                 </h1>
                 <hr />
                 <p className="pt-3 font-inter">
-                    Coming soon!
-                    {/* Here's a fun fact! The first time I ever used HTML & CSS was
-                    in 2014 to customize the many wonderful blog themes people
-                    created on the one and only,
-                    <span className="font-bold"> tumblr.com.</span> */}
+                    The very first time I played around with HTML and CSS was in
+                    2014 on the social networking website{" "}
+                    <a
+                        className="opacity-80 hover:underline"
+                        href="https://www.tumblr.com/"
+                    >
+                        Tumblr
+                    </a>
+                    . Many users would post beautiful custom themes that you
+                    could apply to your personal blog. In order to personalize
+                    the themes to fit my style, I began looking into the source
+                    code and noticed patterns and keywords such as{" "}
+                    <em className="font-semibold">&lt;p&gt;&lt;/p&gt;</em> and{" "}
+                    <em className="font-semibold">&lt;div&gt;&lt;/div&gt;</em>.
+                    Soon, I was able to tweak the structure and styles of the
+                    page to reflect my early-teen personality.
+                </p>
+                <p className="mt-2">
+                    This experience was one of the first to teach me that the
+                    best way to learn is by doing. Last semester, I volunteered
+                    as a front-end developer for a project done mostly in
+                    Angular.js. I had little to no experience with Angular at
+                    the start of the project, but I was able to pick it up very
+                    quickly after observing the work that had already been done
+                    and building up from there.
+                </p>
+                <p className="mt-2">
+                    Currently, I am in my third year of university and I'm a TA
+                    for a Systems Development course taught in C. I am also
+                    volunteering as a developer for another organization,
+                    utilizing technologies such as Node.js and React.js. I would
+                    love an opportunity to hone my programming abilities at
+                    challenging co-op position.
                 </p>
             </div>
 
