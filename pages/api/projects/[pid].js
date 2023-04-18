@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 require("dotenv").config();
 
 // Define the project schema
-import Project from "../../schemas/ProjectModel";
+import Project from "../../../schemas/ProjectModel";
 
 export default async function handler(req, res) {
     await mongoose.connect(process.env.MONGODB_URI, {
@@ -10,7 +10,9 @@ export default async function handler(req, res) {
         useUnifiedTopology: true,
     });
 
-    const projects = await Project.find({});
+    const id = req.query.pid;
+    console.log(id);
+    const projects = await Project.find({slug: id});
     res.status(200).json(projects);
 
     mongoose.connection.close();

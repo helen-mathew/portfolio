@@ -8,4 +8,8 @@ const projectSchema = new mongoose.Schema({
 });
 
 // Define the Project model
-module.exports = mongoose.model("Project", projectSchema);
+// if (mongoose.models && mongoose.model.Project) {
+//     module.exports = mongoose.model.Project;
+// }
+module.exports =
+    mongoose.model.Project || mongoose.model("Project", projectSchema);

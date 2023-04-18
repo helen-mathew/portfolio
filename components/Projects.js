@@ -14,7 +14,7 @@ export default function Projects() {
         <div>
             {projects.map((p) => (
                 <div>
-                    <h2 className=" mt-4 text-yellow-200 opactiy-20 font-inter text-xl md:text-2xl md:text-left font-bold opacity-75 pb-1 ">
+                    <h2 className=" mt-4 text-yellow-200 opactiy-20 font-inter text-xl md:text-2xl md:text-left font-bold opacity-75 pb-1 hover:underline">
                         {p.title}
                     </h2>
                     <p>{p.description}</p>
