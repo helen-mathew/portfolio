@@ -9,7 +9,7 @@ export default function Project({project}) {
 }
 
 export async function getStaticPaths() {
-    const res = await fetch("https://helen-mathew.vercel.app//api/projects");
+    const res = await fetch("https://helen-mathew.vercel.app/api/projects");
     //console.log(res);
     const projects = await res.json();
 
@@ -23,9 +23,10 @@ export async function getStaticProps({params}) {
     const addy = "https://helen-mathew.vercel.app/api/projects/" + params.slug;
 
     const res = await fetch(addy);
-    const data = await res.json();
 
+    const data = await res.json();
+    console.log(data);
     return {
-        props: {project: data[0]},
+        props: {project: data},
     };
 }
