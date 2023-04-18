@@ -34,9 +34,11 @@ export default function Home() {
                         I like <Carousel />
                     </p>
                     <p className="md:text-2xl font-normal opacity-90">
-                        I am a fourth-year student at Carleton University. I
-                        study Cognitive Science with a concentration in
-                        Computing and a minor in Statistics.
+                        I'm a fourth-year undergraduate student majoring in
+                        Cognitive science with a concentration in computer
+                        science, and a minor in Statistics. I grew up in India
+                        and the United Arab Emirates, and have been living in
+                        Ottawa since 2019.
                         {/* <br />
                         I also enjoy <Carousel /> */}
                     </p>
@@ -82,10 +84,12 @@ export default function Home() {
                     and building up from there.
                 </p>
                 <p className="mt-2">
-                    Currently, I am in my fourth year of university and I'm a
-                    part-time tutor at a remote learning company called Paper. I
-                    would love an opportunity to hone my programming abilities
-                    at a challenging position.
+                    Outside of school, I spend a lot of time knitting and
+                    crocheting! I take pride in being able to create at least a
+                    few of my own clothes and accessories. Additionally, I enjoy
+                    being outdoors, discovering new trails, exploring flea
+                    markets, and I'm always on the lookout for new coffeshops in
+                    the city!
                 </p>
             </div>
 

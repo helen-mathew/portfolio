@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
     mode: "jit",
     purge: [
@@ -11,6 +13,15 @@ module.exports = {
                 gradient1: "#387E96",
                 gradient2: "#13547A",
                 logo: "#f3f3f3",
+                transparent: "transparent",
+                current: "currentColor",
+                black: colors.black,
+                white: colors.white,
+                gray: colors.gray,
+                emerald: colors.emerald,
+                indigo: colors.indigo,
+                yellow: colors.yellow,
+                teal: colors.teal,
             },
             fontFamily: {
                 syne: "Syne",
