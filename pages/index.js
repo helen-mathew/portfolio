@@ -8,8 +8,6 @@ import icons from "../data/tools/icons.json";
 import ToolIcon from "../components/ToolIcon";
 import toolicons from "../data/tools/icons.json";
 import Carousel from "../components/Carousel";
-import Typewriter from "typewriter-effect";
-import Typical from "react-typical";
 
 export default function Home() {
     return (
