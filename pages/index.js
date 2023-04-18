@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Card from "../components/Card";
+import Projects from "../components/Projects";
 import React from "react";
 //import avatar from "/avatar-plain.png";
 import icons from "../data/tools/icons.json";
@@ -35,9 +36,9 @@ export default function Home() {
                         I like <Carousel />
                     </p>
                     <p className="md:text-2xl font-normal opacity-90">
-                        I am a third-year student at Carleton University seeking
-                        a Co-op position for the summer. I study Cognitive
-                        Science with a concentration in Computing.
+                        I am a fourth-year student at Carleton University. I
+                        study Cognitive Science with a concentration in
+                        Computing and a minor in Statistics.
                         {/* <br />
                         I also enjoy <Carousel /> */}
                     </p>
@@ -83,12 +84,10 @@ export default function Home() {
                     and building up from there.
                 </p>
                 <p className="mt-2">
-                    Currently, I am in my third year of university and I'm a TA
-                    for a Systems Development course taught in C. I am also
-                    volunteering as a developer for another organization,
-                    utilizing technologies such as Node.js and React.js. I would
-                    love an opportunity to hone my programming abilities at
-                    challenging co-op position.
+                    Currently, I am in my fourth year of university and I'm a
+                    part-time tutor at a remote learning company called Paper. I
+                    would love an opportunity to hone my programming abilities
+                    at a challenging position.
                 </p>
             </div>
 
@@ -96,11 +95,12 @@ export default function Home() {
                 id="projects"
                 className="font-inter my-24 font-light md:text-xl text-gray-200 opacity-90 text-left min-w-full"
             >
-                <h1 className="text-3xl md:text-4xl  font-bold font-inter">
+                <h1 className="text-3xl md:text-4xl font-bold font-inter">
                     Projects
                 </h1>
                 <hr />
-                <p className="pt-3">Coming soon!</p>
+                {/* <p className="pt-3">Coming soon!</p> */}
+                <Projects />
             </div>
 
             <div
