@@ -100,6 +100,9 @@ export default function Home() {
                 <h1 className="text-3xl md:text-4xl font-bold font-inter">
                     Projects
                 </h1>
+                <p className="opacity-80">
+                    Click each item to see more details!
+                </p>
                 <hr />
                 {/* <p className="pt-3">Coming soon!</p> */}
                 <Projects />

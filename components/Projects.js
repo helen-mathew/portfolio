@@ -28,11 +28,15 @@ export default function Projects() {
                         )} */}
                     </div>
                     <div className="w-full md:w-1/3">
-                        <img
-                            className="rounded-md"
-                            src={p.pics[0]}
-                            alt="Screenshot of the website"
-                        />
+                        <Link legacyBehavior href={"/projects/" + p.slug}>
+                            <a className="hover:underline">
+                                <img
+                                    className="rounded-md"
+                                    src={p.pics[0]}
+                                    alt="Screenshot of the website"
+                                />
+                            </a>
+                        </Link>
                     </div>
                     {/* <hr className="border-dashed" /> */}
                 </div>
