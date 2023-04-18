@@ -1,5 +1,11 @@
-export default function Home(p) {
-    return <h1></h1>;
+export default function Project({project}) {
+    console.log(project);
+    return (
+        <div className="items-start px-6 md:px-16 lg:px-28 min-w-screen  text-gray-200 opacity-95 font-inter mt-5">
+            <h1 className="text-3xl md:text-4xl font-bold">{project.title}</h1>
+            <p>{project.description}</p>
+        </div>
+    );
 }
 
 export async function getStaticPaths() {
@@ -14,13 +20,12 @@ export async function getStaticPaths() {
     return {paths, fallback: false};
 }
 export async function getStaticProps({params}) {
-    const res = await fetch(
-        "https://helen-mathew.vercel.app/api/projects/${params.id}"
-    );
-    const project = res.json();
-    console.log(project);
+    const addy = "https://helen-mathew.vercel.app/api/projects/" + params.slug;
+
+    const res = await fetch(addy);
+    const data = await res.json();
 
     return {
-        props: {project},
+        props: {project: data[0]},
     };
 }

@@ -1,7 +1,8 @@
 import Link from "next/link";
 const Navbar = () => {
     return (
-        <nav className="flex justify-center lg:justify-end  font-semibold font-inter text-yellow-200 opacity-75 h-20 absolute top-0 left-0 right-0 z-10">
+        // changed the position from absolute bc the divs after overlap on top otherwise. i cant remember why i made it absolute,
+        <nav className="flex justify-center lg:justify-end  font-semibold font-inter text-yellow-200 opacity-75 h-20 top-0 left-0 right-0 z-10">
             <div className="flex justify-evenly items-center mx-36">
                 <Link legacyBehavior href="#about">
                     <a className="m-3 hover:underline ">About</a>

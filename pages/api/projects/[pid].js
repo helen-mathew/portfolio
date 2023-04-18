@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 
     const id = req.query.pid;
     console.log(id);
-    const projects = await Project.find({slug: id});
+    const projects = await Project.findOne({slug: id});
     res.status(200).json(projects);
 
     mongoose.connection.close();
