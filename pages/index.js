@@ -34,11 +34,17 @@ export default function Home() {
                         I like <Carousel />
                     </p>
                     <p className="md:text-2xl font-normal opacity-90">
-                        I'm a fourth-year undergraduate student majoring in
-                        Cognitive science with a concentration in computer
-                        science, and a minor in Statistics. I grew up in India
-                        and the United Arab Emirates, and have been living in
-                        Ottawa since 2019.
+                        I am a recent graduate from Carleton University in
+                        Ottawa, Ontario. I hold a Bachelor's degree in Cognitive
+                        Science with a concentration in computer science, and a
+                        minor in Statistics. I am currently a remote tutor at an
+                        edtech organization called{" "}
+                        <a
+                            className="opacity-80 hover:underline"
+                            href="https://paper.co//"
+                        >
+                            Paper.
+                        </a>{" "}
                         {/* <br />
                         I also enjoy <Carousel /> */}
                     </p>
@@ -76,15 +82,15 @@ export default function Home() {
                 </p>
                 <p className="mt-2">
                     This experience was one of the first to teach me that the
-                    best way to learn is by doing. Last semester, I volunteered
-                    as a front-end developer for a project done mostly in
-                    Angular.js. I had little to no experience with Angular at
-                    the start of the project, but I was able to pick it up very
-                    quickly after observing the work that had already been done
-                    and building up from there.
+                    best way to learn is by doing. Recently, I volunteered as a
+                    front-end developer for a project done mostly in Angular.js.
+                    I had little to no experience with Angular at the start of
+                    the project, but I was able to pick it up very quickly after
+                    observing the work that had already been done and building
+                    up from there.
                 </p>
                 <p className="mt-2">
-                    Outside of school, I spend a lot of time knitting and
+                    Outside of work, I spend a lot of time knitting and
                     crocheting! I take pride in being able to create at least a
                     few of my own clothes and accessories. Additionally, I enjoy
                     being outdoors, discovering new trails, exploring flea
