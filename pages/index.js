@@ -87,7 +87,9 @@ export default function Home() {
                     I had little to no experience with Angular at the start of
                     the project, but I was able to pick it up very quickly after
                     observing the work that had already been done and building
-                    up from there.
+                    up from there. Additionally, I was able to teach myself the
+                    basics of React by using it as a framework to build this
+                    portfolio!
                 </p>
                 <p className="mt-2">
                     Outside of work, I spend a lot of time knitting and
