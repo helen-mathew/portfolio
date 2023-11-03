@@ -109,7 +109,7 @@ export default function Home() {
                     Projects
                 </h1>
                 <p className="opacity-80">
-                    Click each item to see more details!
+                    {/* Click each item to see more details! */}
                 </p>
                 <hr />
                 {/* <p className="pt-3">Coming soon!</p> */}
