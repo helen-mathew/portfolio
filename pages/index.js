@@ -62,7 +62,7 @@ export default function Home() {
                     About Me
                 </h1>
                 <hr />
-                <p className="pt-3 font-inter">
+                <p className="mt-4 font-inter">
                     The very first time I played around with HTML and CSS was in
                     2014 on the social networking website{" "}
                     <a
@@ -80,18 +80,22 @@ export default function Home() {
                     Soon, I was able to tweak the structure and styles of the
                     page to reflect my early-teen personality.
                 </p>
-                <p className="mt-2">
+                <p className="mt-4">
                     This experience was one of the first to teach me that the
-                    best way to learn is by doing. Recently, I volunteered as a
-                    front-end developer for a project done mostly in Angular.js.
-                    I had little to no experience with Angular at the start of
-                    the project, but I was able to pick it up very quickly after
-                    observing the work that had already been done and building
-                    up from there. Additionally, I was able to teach myself the
-                    basics of React by using it as a framework to build this
-                    portfolio!
+                    best way to learn is by doing. A web development course I
+                    completed in university taught me the fundamentals of web
+                    design and development. The coursework included developing a
+                    movie database website using the tools we learned about over
+                    the semester. This was an excellent opportunity for me to
+                    practice the skills I learned to build my very own web
+                    application using Node.js and MongoDB. Additionally, I
+                    gained volunteer experience as a front-end developer for a
+                    project done mostly in Angular.js. I had little to no
+                    experience with Angular at the start of the project, but I
+                    was able to pick it up very quickly after observing the work
+                    that had already been done and building up from there.
                 </p>
-                <p className="mt-2">
+                <p className="mt-4">
                     Outside of work, I spend a lot of time knitting and
                     crocheting! I take pride in being able to create at least a
                     few of my own clothes and accessories. Additionally, I enjoy
